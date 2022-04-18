@@ -1,0 +1,104 @@
+//colors 
+$main: #045A9C;
+$secondary: #56758D;
+$tertiary: #023760;
+$accent: #03497E;
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: $secondary;
+  * {
+    overflow: hidden;
+    font-family: 'Kaushan Script', cursive;
+  }
+}
+
+header {
+  h1 {
+    text-align: center;
+    font-size: 35px;
+    color: $accent;
+  }
+}
+
+.board {
+  width: 80%;
+  background: $main;
+  margin: 0 auto;
+  position: relative;
+  h2 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 40px;
+    color: $tertiary;
+  }
+}
+
+.board-container {
+  width: 50%;
+  margin: 0 auto;
+  height: 400px;
+  padding: 10px;
+}
+
+#select-marker {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  border: 1px dotted $secondary;
+  box-shadow: 2px 5px #000;
+  border-radius: 5px;
+  margin: 15px auto;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 15px;
+  background: #f7f7f7;
+  top: 150px;
+  left: 25%;
+  @media screen and(min-width: 900px) {
+    top: 25%;
+    left: 40%;
+  }
+  p {
+    display: block;
+    margin: {
+      right: 10px;
+      bottom: 15px;
+      top: 0;
+    }
+  }
+  select {
+    width: auto;
+    background-color: $main;
+    appearance: none;
+    color: white;
+    padding: {
+      top: 5px;
+      bottom: 5px;
+      right: 20px;
+      left: 5px;
+    }
+  }
+  &.close {
+    display: none;
+  }
+}
+
+.line {
+  width: 100%;
+  display: block;
+}
+
+.box {
+  width: 30%;
+  float: left;
+  height: 80px;
+  border: 1px solid $main;
+  display: block;
+  background: $secondary;
+  color: $accent;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
